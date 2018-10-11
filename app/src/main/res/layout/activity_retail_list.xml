@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/raw_material_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="单号："
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/retail_customcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/raw_material_tip"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/raw_depot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/retail_billdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/raw_lot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="客户："
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+             />
+
+        <TextView
+            android:id="@+id/retail_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/raw_lot_tip"
+            android:textColor="@color/black"
+             />
+
+        <TextView
+            android:id="@+id/raw_grade_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+             />
+        <TextView
+            android:id="@+id/retail_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+</LinearLayout>

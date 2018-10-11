@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_title"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/raw_material_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="单号："
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/retail_customcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/raw_material_tip"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/raw_depot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/retail_billdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/raw_lot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="客户："
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/retail_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/raw_lot_tip"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/raw_grade_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/retail_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/dye_check_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=" 整卷："
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/dye_check"
+                style="?android:attr/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        <com.joe.app.outbound.ui.widget.ClearEditText
+            android:id="@+id/etScanCode"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_line_bg"
+            android:gravity="center_vertical"
+            android:hint="条码"
+            android:imeOptions="actionDone"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="15sp"></com.joe.app.outbound.ui.widget.ClearEditText>
+
+        <TextView
+            android:id="@+id/txtvConfirm"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_bg_box"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></ListView>
+</LinearLayout>

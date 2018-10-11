@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="工作区"
+            android:textColor="#708090"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="销售"
+            android:drawableTop="@mipmap/sall"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+
+        android:id="@+id/retail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="零售"
+        android:drawableTop="@mipmap/sall"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="更新"
+            android:drawableTop="@mipmap/update"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

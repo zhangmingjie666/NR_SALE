@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    >
+    <com.joe.app.outbound.ui.widget.ClearEditText
+        android:id="@+id/etPackageNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_line_bg"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="包号"
+        />
+    <TextView
+        android:id="@+id/txtvConfirm"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_bg_box"
+        android:text="确认"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

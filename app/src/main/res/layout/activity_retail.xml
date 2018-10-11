@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_bg"
+    android:orientation="vertical"
+    tools:context="com.joe.app.outbound.ui.activity.SaleActivity">
+
+    <include layout="@layout/actionbar_retail"></include>
+
+    <com.joe.app.outbound.ui.widget.ClearEditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_edittext_bg"
+        android:gravity="center_vertical"
+        android:hint="输入单据编号"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp" />
+
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.jingchen.pulltorefresh.PullableListView>
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>
